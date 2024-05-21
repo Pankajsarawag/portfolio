@@ -75,7 +75,7 @@
   background-color: var(--background-color-main);
   z-index: 1;
   width: 90% !important;
-  height: 13.6rem;
+  height: 12.7rem;
   position: fixed;
   top: 0px;
   width: 90%;
@@ -106,7 +106,7 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-20);
   box-shadow: var(--shadow-3);
-  margin-bottom: 3rem;
+  margin-bottom: 4.4rem;
 }
 
 .Image {
@@ -335,17 +335,17 @@
 
   .left-main {
     width: 100%;
-    height: 13rem;
+    height: 11.9rem;
     justify-content: center;
     display: flex;
-    margin: 1rem 0rem;
+    margin: 0.7rem 0rem;
   }
 
   .subLeft-main {
     width: 90%;
     height: 12rem;
     flex-direction: row;
-    margin: 10px;
+    margin: 0px;
   }
 
   .Image {
@@ -549,7 +549,7 @@
     position: fixed;
     align-items: center;
     margin-right: 2px;
-    bottom: 10px;
+    bottom: 10.7px;
     left: 5%;
     width: 90%;
     z-index: 2;
