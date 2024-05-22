@@ -329,7 +329,8 @@
 .Por-1 p{
     font-size: 0.9rem;
     color: var(--font-color-subheading);
-    line-height: 1.5rem     ;
+    line-height: 1.5rem ;
+    font-weight: 500;
 }
 
 .Por-2{
@@ -339,6 +340,7 @@
     font-weight: 600;
     margin-left: 5rem;
     margin-right: 1rem;
+    font-weight: 500;
 }
 
 .Por-2 h3{
@@ -381,28 +383,28 @@
 .html{
     width: 100%;
     height: 8px;
-    background: linear-gradient(to right, var(--font-color-gold) 100%, black 80%);
+    background: linear-gradient(to right, var(--font-color-gold) 95%, black 80%);
     border-radius: 25px;
 }
 
 .css{
     width: 100%;
     height: 8px;
-    background: linear-gradient(to right, var(--font-color-gold) 100%, black 80%);
+    background: linear-gradient(to right, var(--font-color-gold) 95%, black 80%);
     border-radius: 25px;
 }
 
 .js{
     width: 100%;
     height: 8px;
-    background: linear-gradient(to right, var(--font-color-gold) 100%, black 80%);
+    background: linear-gradient(to right, var(--font-color-gold) 90%, black 80%);
     border-radius: 25px;
 }
 
 .Ts{
     width: 100%;
     height: 8px;
-    background: linear-gradient(to right, var(--font-color-gold) 90%, black 80%);
+    background: linear-gradient(to right, var(--font-color-gold) 80%, black 80%);
     border-radius: 25px;
 }
 
@@ -416,7 +418,7 @@
 .Ejs{
     width: 100%;
     height: 8px;
-    background: linear-gradient(to right, var(--font-color-gold) 80%, black 80%);
+    background: linear-gradient(to right, var(--font-color-gold) 70%, black 70%);
     border-radius: 25px;
 }
 
@@ -430,7 +432,7 @@
 .sql{
     width: 100%;
     height: 8px;
-    background: linear-gradient(to right, var(--font-color-gold) 80%, black 80%);
+    background: linear-gradient(to right, var(--font-color-gold) 75%, black 75%);
     border-radius: 25px;
 }
 
@@ -492,6 +494,10 @@
         top:22.2rem
     }
 
+    .education p{
+        font-weight: 400;
+    }
+
     .Por-Section{
         display: none;
     }
@@ -513,6 +519,15 @@
         text-align: start;
         margin-left: 3.3rem;
      }
+
+     .Por-1 p{
+        font-weight: 400;
+     }
+
+     .Por-2 p{
+        font-weight: 400;
+     }
+ 
  
      .Por-2{
          text-align: start;

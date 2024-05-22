@@ -7,7 +7,7 @@ import "./Resume.css";
 export default function Resume() {
     return (
         <>
-            <div className="resume">
+   
                 <div className="education">
                     <div className="education-left">
                         <div className="education-line"></div>
@@ -90,17 +90,17 @@ export default function Resume() {
                 <div className="skill-percent">
                     <h1 style={{fontSize:"1.8rem", fontWeight:600}}>Skills</h1>
                     <div className="skill-Section">
-                        <h1 className='skill-name'> <b>HTML</b> 100%</h1>
+                        <h1 className='skill-name'> <b>HTML</b> 95%</h1>
                         <div className="html"></div>
                     </div>
 
                     <div className="skill-Section">
-                        <h1 className='skill-name'> <b>CSS</b> 100%</h1>
+                        <h1 className='skill-name'> <b>CSS</b> 95%</h1>
                         <div className="css"></div>
                     </div>
 
                     <div className="skill-Section">
-                        <h1 className='skill-name'> <b>JavaScript</b> 100%</h1>
+                        <h1 className='skill-name'> <b>JavaScript</b> 80%</h1>
                         <div className="js"></div>
                     </div>
 
@@ -115,23 +115,21 @@ export default function Resume() {
                     </div>
 
                     <div className="skill-Section">
-                        <h1 className='skill-name'> <b>Express Js</b> 80%</h1>
-                        <div className="Ejs"></div>
-                    </div>
-
-                    <div className="skill-Section">
                         <h1 className='skill-name'> <b>Next Js</b> 80%</h1>
                         <div className="next"></div>
                     </div>
                     
                     <div className="skill-Section">
-                        <h1 className='skill-name'> <b>SQL</b> 80%</h1>
+                        <h1 className='skill-name'> <b>SQL</b> 75%</h1>
                         <div className="sql"></div>
                     </div>
 
-
+                    <div className="skill-Section">
+                        <h1 className='skill-name'> <b>Express Js</b> 70%</h1>
+                        <div className="Ejs"></div>
+                    </div>
                 </div>
-            </div>
+       
         </>
     );
 }
