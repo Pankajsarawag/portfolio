@@ -455,8 +455,8 @@
 
 .skill-percent::-webkit-scrollbar-track {
     border-radius: 100px;
-    margin: 1rem 0rem;
-    background-color: var(--background-color-tertiary);
+    margin: 3rem 0rem;
+    background-color: #0e0d0d;
     overflow: hidden;
 }
 

@@ -86,6 +86,8 @@
 
 .technology::-webkit-scrollbar-track {
     border-radius: 100px;
+    margin: 0% 100px;
+    background-color: var(--background-color-tertiary);
 }
 
 @media screen and (max-width: 1150px) {
