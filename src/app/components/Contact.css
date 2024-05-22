@@ -35,7 +35,7 @@
 }
 
 .button button:hover {
-    background-color: #20a4b6;
+    background-color: #20a5b6d0;
     transform: scale(0.95);
     cursor: pointer;
 }
@@ -99,7 +99,7 @@
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
     .name-email{
         flex-direction: column;
     }
