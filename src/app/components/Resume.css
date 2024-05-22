@@ -333,6 +333,13 @@
     font-weight: 500;
 }
 
+.number-icon{
+    font-size: 1.7rem;
+    color: var(--font-color-gold);
+    margin-right: 2.1rem;
+    margin-left: -4rem;
+}
+
 .Por-2{
     font-size: 1rem;
     line-height: 1.7rem;
@@ -519,6 +526,13 @@
         text-align: start;
         margin-left: 3.3rem;
      }
+
+     .number-icon{
+        font-size: 1.7rem;
+        color: var(--font-color-gold);
+        margin-right: 1.3rem;
+        margin-left: -3rem;
+    }
 
      .Por-1 p{
         font-weight: 400;
