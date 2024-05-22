@@ -12,6 +12,7 @@ import "./home.css";
 
 import Contact from "./Contact";
 import About from "./About";
+import Resume from "./Resume";
 
 export default function MainPage() {
   
@@ -211,7 +212,7 @@ export default function MainPage() {
 
           <div className="content">
             {about && (<About/>)}
-            {resume && (<div className="resume">Resume</div>)}
+            {resume && (<Resume/>)}
             {projects && (<div className="projects">Projects</div>)}
             {contact && (<Contact />)}
           </div>
