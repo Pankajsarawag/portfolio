@@ -50,7 +50,7 @@ export default function Contact() {
                         <label>Name <span style={{ color: "red" }}>*</span></label>
                         <input type="text" name="Name"  required={true}  />
                     </div>
-                    <div className="name">
+                    <div className="email">
                         <label>Email <span style={{ color: "red" }}>*</span></label>
                         <input type="email" name="Email"  required={true}  />
                     </div>
