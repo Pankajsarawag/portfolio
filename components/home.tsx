@@ -10,6 +10,8 @@ import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import Image from "next/image";
 import "./home.css";
 
+import Contact from "./Contact";
+
 export default function MainPage() {
   
   const [about, setAbout] = useState(true);
@@ -237,7 +239,7 @@ The cow's significance in human societies is profound and multi-dimensional, enc
             </div>)}
             {resume && (<div className="resume">Resume</div>)}
             {projects && (<div className="projects">Projects</div>)}
-            {contact && (<div className="contact">Contact</div>)}
+            {contact && (<Contact />)}
           </div>
         </div>
       </div>
