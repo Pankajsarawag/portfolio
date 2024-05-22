@@ -1,12 +1,12 @@
 import './About.css';
 import CodeIcon from '@mui/icons-material/Code';
 export default function About() {
-    return(
+    return (
         <>
-            <div style={{color:"gray-700", fontSize:"1rem", marginBottom:"2rem"}}>
+            <div style={{ color: "gray-700", fontSize: "1rem", marginBottom: "2rem" }}>
                 I’m Pankaj Kumar, a passionate web developer with a keen eye for design and functionality. As a student eager to leave a mark in the world of web development, I dedicate myself to creating websites that are not just operational, but also aesthetically appealing and user-centric.
             </div>
-            <h1 style={{fontWeight:800, fontSize:"2rem", margin: "1rem 0rem"}}>What I'm Doing</h1>
+            <h1 style={{ fontWeight: 800, fontSize: "2rem", margin: "1rem 0rem" }}>What I'm Doing</h1>
             <div className="skills-main">
                 <div className="skills">
                     <div className="ui-ux skill-box">
@@ -17,11 +17,11 @@ export default function About() {
                         </div>
                     </div>
                     <div className="webdev skill-box">
-                    <img src="/webDev.png" alt="webDev" />
-                    <div className="skill-discription">
-                        <h1>Web Development</h1>
-                        <p>Developing responsive and dynamic websites using the latest technologies</p>
-                    </div>
+                        <img src="/webDev.png" alt="webDev" />
+                        <div className="skill-discription">
+                            <h1>Web Development</h1>
+                            <p>Developing responsive and dynamic websites using the latest technologies</p>
+                        </div>
                     </div>
                 </div>
                 <div className="skills">
@@ -41,7 +41,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <h1 style={{fontWeight:800, fontSize:"2rem", margin: "1rem 0rem"}}>Technologies</h1>
+            <h1 style={{ fontWeight: 800, fontSize: "2rem", margin: "1rem 0rem" }}>Technologies</h1>
             <div className='technology'>
                 <div className="tech-details">
                     <img src="/html.png" alt="html" />
@@ -74,7 +74,7 @@ export default function About() {
                 </div>
 
                 <div className="tech-details">
-                    <img src="/express.png" alt = "express" />
+                    <img src="/express.png" alt="express" />
                     <h1>Express Js</h1>
                 </div>
 

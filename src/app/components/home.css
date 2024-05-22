@@ -70,7 +70,7 @@
   margin-left: 1rem;
 }
 
-.left-mask{
+.left-mask {
   display: none;
   background-color: var(--background-color-main);
   z-index: 1;
@@ -83,7 +83,7 @@
 }
 
 .subLeft-main {
-  display: flex; 
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -256,7 +256,7 @@
   display: none;
 }
 
-.right-mask{
+.right-mask {
   display: none;
   z-index: 1;
   background-color: var(--background-color-main);
@@ -271,7 +271,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+
   width: 100%;
   border-radius: var(--radius-20) var(--radius-20) 0px 0px;
   background-color: var(--background-color-secondary);
@@ -398,7 +398,7 @@
     box-shadow: var(--shadow-3);
   }
 
-  .left-mask{
+  .left-mask {
     display: flex;
   }
 }
@@ -493,7 +493,7 @@
 
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
   .header-details {
     font-size: 1.2rem;
     width: 70%;
@@ -516,7 +516,7 @@
   }
 }
 
-@media screen and (max-width: 660px){
+@media screen and (max-width: 660px) {
   .header-details {
     font-size: 1rem;
     padding: 0px 10px;
@@ -534,16 +534,16 @@
   }
 }
 
-@media screen and (max-width: 500px){
-  .subRight-main{
-    position: relative  ;
+@media screen and (max-width: 500px) {
+  .subRight-main {
+    position: relative;
   }
 
   .header h1 {
     padding-top: 10px;
   }
 
-  .header-details{
+  .header-details {
     position: fixed;
     align-items: center;
     margin-right: 2px;
@@ -556,7 +556,7 @@
     padding: 0px 20px;
   }
 
-  .right-mask{
+  .right-mask {
     display: flex;
   }
 
@@ -564,11 +564,11 @@
     margin-left: 20px;
   }
 
-  .small-screen-btn{
+  .small-screen-btn {
     padding: 5px;
   }
 
-  .sm-details{
+  .sm-details {
     margin: 0px;
   }
 
@@ -578,29 +578,30 @@
   }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .sm-userInfo h1 {
     font-size: 1.2rem;
   }
 
-  .subLeft-main{
+  .subLeft-main {
     justify-content: start;
     padding: 0px 20px;
   }
+
   .sm-userInfo p {
     font-size: 0.75rem;
   }
 
-  .sm-socials{
+  .sm-socials {
     display: none;
   }
 
-  .smm-socials{
+  .smm-socials {
     display: flex;
     position: absolute;
     right: 15px;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     top: 40px;
   }
 
@@ -614,87 +615,87 @@
 
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 390px) {
   .sm-userInfo h1 {
     font-size: 1.1rem;
   }
-  
+
   .sm-userInfo p {
     font-size: 0.7rem;
   }
 
-  .sm-Image{
+  .sm-Image {
     width: 120px;
     margin-left: 0%;
   }
 
-  .header-details{
+  .header-details {
     font-size: 0.9rem;
     padding: 0px 15px;
   }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) {
   .sm-userInfo h1 {
     font-size: 1.1rem;
   }
-  
+
   .sm-userInfo p {
     font-size: 0.7rem;
   }
 
-  .sm-userInfo{
+  .sm-userInfo {
     padding: 15px;
   }
 
-  .sm-Image{
+  .sm-Image {
     width: 110px;
     margin-left: 15px;
   }
 
-  .smm-socials{
+  .smm-socials {
     display: flex;
     position: absolute;
     right: 10px;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     top: 40px;
   }
 
-  .subLeft-main{
+  .subLeft-main {
     justify-content: start;
     padding: 0px 10px;
   }
 }
 
-@media screen and (max-width: 335px){
+@media screen and (max-width: 335px) {
   .sm-userInfo h1 {
     font-size: 1rem;
   }
-  
+
   .sm-userInfo p {
     font-size: 0.55rem;
   }
 
-  .sm-userInfo{
+  .sm-userInfo {
     padding: 15px;
   }
 
-  .sm-Image{
+  .sm-Image {
     width: 90px;
     margin-left: 15px;
   }
 
-  .smm-socials{
+  .smm-socials {
     display: flex;
     position: absolute;
     right: 10px;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     top: 40px;
   }
 
-  .subLeft-main{
+  .subLeft-main {
     justify-content: start;
     padding: 0px 10px;
   }

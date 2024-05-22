@@ -74,14 +74,14 @@ export default function Resume() {
                     <h1 className='por'>POR</h1>
                 </div>
                 <div className="Por-1">
-                    <h1> <LooksOneIcon className='number-icon'/>ICE NITT - Web Team </h1>
+                    <h1> <LooksOneIcon className='number-icon' />ICE NITT - Web Team </h1>
                     <h3>March 2023 - Present</h3>
                     <p>Involved in the design and development of the institution’s website, specifically focusing on incorporating the
                         detailed information of faculties. By organizing and presenting the faculty information in a user-friendly manner, we
                         aimed to provide visitors with easy access to relevant details, fostering a seamless browsing experience.</p>
                 </div>
                 <div className="Por-2">
-                    <h1><LooksTwoIcon className='number-icon'/>Public Relation and Publicity Head, Aayaam, NIT trichy </h1>
+                    <h1><LooksTwoIcon className='number-icon' />Public Relation and Publicity Head, Aayaam, NIT trichy </h1>
                     <h3>July 2023 - Present</h3>
                     <p>Managed multiple events for Aayaam a Student’s Society that aims to promote diversity of Northern India within the
                         Campus. Aayaam organizes Hindi literary competitions at inter-college and intra-college levels, promoting creativity
@@ -89,7 +89,7 @@ export default function Resume() {
                 </div>
             </div>
             <div className="skill-percent">
-                <h1 style={{fontSize:"1.8rem", fontWeight:600}}>Skills</h1>
+                <h1 style={{ fontSize: "1.8rem", fontWeight: 600 }}>Skills</h1>
                 <div className="skill-Section">
                     <h1 className='skill-name'> <b>HTML</b> 95%</h1>
                     <div className="html"></div>
@@ -119,7 +119,7 @@ export default function Resume() {
                     <h1 className='skill-name'> <b>Next Js</b> 80%</h1>
                     <div className="next"></div>
                 </div>
-                
+
                 <div className="skill-Section">
                     <h1 className='skill-name'> <b>SQL</b> 75%</h1>
                     <div className="sql"></div>

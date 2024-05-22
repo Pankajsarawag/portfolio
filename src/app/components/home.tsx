@@ -16,7 +16,7 @@ import Resume from "./Resume";
 import Projects from "./Projects";
 
 export default function MainPage() {
-  
+
   const [about, setAbout] = useState(true);
   const [resume, setResume] = useState(false);
   const [projects, setProjects] = useState(false);
@@ -97,7 +97,7 @@ export default function MainPage() {
           </div>
 
           <button className="small-screen-btn"
-          onClick={() => setSmallScreen(!smallScreen)}
+            onClick={() => setSmallScreen(!smallScreen)}
           >
             {smallScreen ? <MenuOpenIcon /> : <MenuIcon />}
           </button>
@@ -119,7 +119,7 @@ export default function MainPage() {
                     <h5>+91 9529541243</h5>
                   </div>
                 </div>
-    
+
                 <div className="sm-location sm-details-div">
                   <FmdGoodOutlinedIcon className="detail-icon" />
                   <div className="sm-subdetails">
@@ -129,28 +129,28 @@ export default function MainPage() {
                 </div>
               </div>
               <span className="sm-socials">
-              <a href="https://www.linkedin.com/in/pankaj-kumar-b7362722a/" target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon className="social-icon" /> LinkedIn
-              </a>
+                <a href="https://www.linkedin.com/in/pankaj-kumar-b7362722a/" target="_blank" rel="noopener noreferrer">
+                  <LinkedInIcon className="social-icon" /> LinkedIn
+                </a>
 
-              <a href="https://github.com/Pankajsarawag" target="_blank" rel="noopener noreferrer">
-                <GitHubIcon className="social-icon" /> GitHub
-              </a>
+                <a href="https://github.com/Pankajsarawag" target="_blank" rel="noopener noreferrer">
+                  <GitHubIcon className="social-icon" /> GitHub
+                </a>
               </span>
 
               <span className="smm-socials">
-              <a href="https://www.linkedin.com/in/pankaj-kumar-b7362722a/" target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon style={{fontSize:30}} />
-              </a>
+                <a href="https://www.linkedin.com/in/pankaj-kumar-b7362722a/" target="_blank" rel="noopener noreferrer">
+                  <LinkedInIcon style={{ fontSize: 30 }} />
+                </a>
 
-              <a href="https://github.com/Pankajsarawag" target="_blank" rel="noopener noreferrer">
-                <GitHubIcon style={{fontSize:30}} />  
-              </a>
+                <a href="https://github.com/Pankajsarawag" target="_blank" rel="noopener noreferrer">
+                  <GitHubIcon style={{ fontSize: 30 }} />
+                </a>
               </span>
             </div>
-          ):(
-           <div className="small-screen-userInfo">
-                <div className="sm-Image">
+          ) : (
+            <div className="small-screen-userInfo">
+              <div className="sm-Image">
                 <Image
                   src="/my-avatar.png"
                   alt="My Avatar"
@@ -164,7 +164,7 @@ export default function MainPage() {
                 <p> Web Developer</p>
               </div>
 
-           </div>
+            </div>
           )}
 
           <span className="socials">
@@ -212,9 +212,9 @@ export default function MainPage() {
           </div>
 
           <div className="content">
-            {about && (<About/>)}
-            {resume && (<Resume/>)}
-            {projects && (<Projects/>)}
+            {about && (<About />)}
+            {resume && (<Resume />)}
+            {projects && (<Projects />)}
             {contact && (<Contact />)}
           </div>
         </div>

@@ -48,17 +48,17 @@ export default function Contact() {
                 <div className="name-email">
                     <div className="name">
                         <label>Name <span style={{ color: "red" }}>*</span></label>
-                        <input type="text" name="Name"  required={true}  />
+                        <input type="text" name="Name" required={true} />
                     </div>
                     <div className="email">
                         <label>Email <span style={{ color: "red" }}>*</span></label>
-                        <input type="email" name="Email"  required={true}  />
+                        <input type="email" name="Email" required={true} />
                     </div>
                 </div>
                 <label>Message</label>
                 <textarea name="message" />
                 <div className="button">
-                <button value={"Send"}><SendIcon style={{marginRight:5}}/> Send</button>
+                    <button value={"Send"}><SendIcon style={{ marginRight: 5 }} /> Send</button>
                 </div>
             </form>
         </>

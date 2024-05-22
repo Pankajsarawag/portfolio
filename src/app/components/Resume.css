@@ -7,7 +7,7 @@
     --font-color-heading: #FAFAFA;
     --font-color-subheading: #D6D6D6;
     --font-color-gold: #20a4b6;
-    --line-color : rgb(54, 53, 53);
+    --line-color: rgb(54, 53, 53);
     --radius-6: 6px;
     --radius-8: 8px;
     --radius-10: 10px;
@@ -17,18 +17,18 @@
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
-  
+
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease-in-out;
 }
 
-.education{
+.education {
     display: flex;
     flex-direction: row;
     margin: 5px 0px;
 }
 
-.education-left{
+.education-left {
     width: 8%;
     height: auto;
     position: relative;
@@ -37,13 +37,13 @@
     align-items: center;
 }
 
-.education-right{
+.education-right {
     width: 92%;
     position: relative;
     margin-left: 1rem;
 }
 
-.education-line{
+.education-line {
     width: 2px;
     height: 18rem;
     background-color: var(--line-color);
@@ -51,7 +51,7 @@
     top: 0;
 }
 
-.education-icon{
+.education-icon {
     font-size: 3rem;
     background-color: var(--background-color-tertiary);
     padding: 5px;
@@ -62,96 +62,96 @@
     position: absolute;
 }
 
-.education-point1{
+.education-point1 {
     position: absolute;
     font-size: 1.5rem;
     color: var(--font-color-gold);
-    top:4rem;
+    top: 4rem;
 }
 
-.education-point2{
+.education-point2 {
     position: absolute;
     font-size: 1.5rem;
     color: var(--font-color-gold);
     top: 10.5rem;
 }
 
-.education-point3{
+.education-point3 {
     position: absolute;
     font-size: 1.5rem;
     color: var(--font-color-gold);
-    top:17.3rem
+    top: 17.3rem
 }
 
-.education-right{
+.education-right {
     display: flex;
     flex-direction: column;
 }
 
-.Education-Section{
+.Education-Section {
     font-size: 2rem;
     font-weight: 600;
     color: var(--font-color-heading);
 }
 
-.college{
+.college {
     font-size: 1rem;
     line-height: 1.7rem;
     margin-top: 15px;
     font-weight: 500;
 }
 
-.college h3{
+.college h3 {
     font-size: 0.9rem;
     color: var(--font-color-gold);
 }
 
-.college p{
+.college p {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
 }
 
-.class-12{
+.class-12 {
     font-size: 1rem;
     line-height: 1.7rem;
     margin-top: 25px;
     font-weight: 500;
 }
 
-.class-12 h3{
+.class-12 h3 {
     font-size: 0.9rem;
     color: var(--font-color-gold);
 }
 
-.class-12 p{
+.class-12 p {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
 }
 
-.class-10{
+.class-10 {
     font-size: 1rem;
     line-height: 1.7rem;
     margin-top: 25px;
     font-weight: 500;
 }
 
-.class-10 h3{
+.class-10 h3 {
     font-size: 0.9rem;
     color: var(--font-color-gold);
 }
 
-.class-10 p{
+.class-10 p {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
 }
 
-.achievements{
+.achievements {
     display: flex;
     flex-direction: row;
     margin: 3rem 0px;
 }
 
-.achievements-left{
+.achievements-left {
     width: 8%;
     height: auto;
     position: relative;
@@ -160,14 +160,14 @@
     align-items: center;
 }
 
-.achievements-right{
+.achievements-right {
     width: 92%;
     position: relative;
     margin-left: 1rem;
 }
 
 
-.achievements-line{
+.achievements-line {
     width: 2px;
     height: 18rem;
     background-color: var(--line-color);
@@ -175,7 +175,7 @@
     top: 0;
 }
 
-.achievements-icon{
+.achievements-icon {
     font-size: 3rem;
     background-color: var(--background-color-tertiary);
     padding: 5px;
@@ -186,40 +186,40 @@
     position: absolute;
 }
 
-.achievements-point1{
+.achievements-point1 {
     position: absolute;
     font-size: 1.5rem;
     color: var(--font-color-gold);
-    top:4rem;
+    top: 4rem;
 }
 
-.achievements-point2{
+.achievements-point2 {
     position: absolute;
     font-size: 1.5rem;
     color: var(--font-color-gold);
     top: 10.5rem;
 }
 
-.achievements-point3{
+.achievements-point3 {
     position: absolute;
     font-size: 1.5rem;
     color: var(--font-color-gold);
-    top:17.3rem
+    top: 17.3rem
 }
 
-.achievements-right{
+.achievements-right {
     display: flex;
     flex-direction: column;
 }
 
-.Achievements-Section{
+.Achievements-Section {
     font-size: 2rem;
     font-weight: 600;
     color: var(--font-color-heading);
 }
 
 
-.achievement1{
+.achievement1 {
     font-size: 1rem;
     line-height: 1.7rem;
     margin-top: 15px;
@@ -227,17 +227,17 @@
     color: var(--font-color-gold);
 }
 
-.achievement1 h3{
+.achievement1 h3 {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
 }
 
-.achievement1 p{
+.achievement1 p {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
 }
 
-.achievement2{
+.achievement2 {
     font-size: 1rem;
     line-height: 1.7rem;
     margin-top: 25px;
@@ -245,17 +245,17 @@
     color: var(--font-color-gold);
 }
 
-.achievement2 h3{
+.achievement2 h3 {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
 }
 
-.achievement2 p{
+.achievement2 p {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
 }
 
-.achievement3{
+.achievement3 {
     font-size: 1rem;
     line-height: 1.7rem;
     margin-top: 25px;
@@ -263,23 +263,23 @@
     color: var(--font-color-gold);
 }
 
-.achievement3 h3{
+.achievement3 h3 {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
 }
 
-.achievement3 p{
+.achievement3 p {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
 }
 
-.Position-of-Responsibility{
+.Position-of-Responsibility {
     display: flex;
     flex-direction: column;
     margin: 3rem 0px;
 }
 
-.Por-icon{
+.Por-icon {
     font-size: 3rem;
     background-color: var(--background-color-tertiary);
     padding: 5px;
@@ -290,13 +290,13 @@
     margin-left: 0.4rem;
 }
 
-.Por-top{
+.Por-top {
     display: flex;
     flex-direction: row;
     gap: 1.3rem;
 }
 
-.Por-Section{
+.Por-Section {
     font-size: 2rem;
     font-weight: 600;
     color: var(--font-color-heading);
@@ -304,7 +304,7 @@
 }
 
 
-.por{
+.por {
     font-size: 2rem;
     font-weight: 600;
     color: var(--font-color-heading);
@@ -312,7 +312,7 @@
     display: none;
 }
 
-.Por-1{
+.Por-1 {
     font-size: 1rem;
     line-height: 1.7rem;
     margin-top: 15px;
@@ -321,26 +321,26 @@
     margin-right: 1rem;
 }
 
-.Por-1 h3{
+.Por-1 h3 {
     font-size: 0.9rem;
     color: var(--font-color-gold);
 }
 
-.Por-1 p{
+.Por-1 p {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
-    line-height: 1.5rem ;
+    line-height: 1.5rem;
     font-weight: 500;
 }
 
-.number-icon{
+.number-icon {
     font-size: 1.7rem;
     color: var(--font-color-gold);
     margin-right: 2.1rem;
     margin-left: -4rem;
 }
 
-.Por-2{
+.Por-2 {
     font-size: 1rem;
     line-height: 1.7rem;
     margin-top: 25px;
@@ -350,18 +350,18 @@
     font-weight: 500;
 }
 
-.Por-2 h3{
+.Por-2 h3 {
     font-size: 0.9rem;
     color: var(--font-color-gold);
 }
 
-.Por-2 p{
+.Por-2 p {
     font-size: 0.9rem;
     color: var(--font-color-subheading);
-    line-height: 1.5rem     ;
+    line-height: 1.5rem;
 }
 
-.skill-percent{
+.skill-percent {
     display: flex;
     flex-direction: column;
     margin: 3rem 0px;
@@ -376,67 +376,67 @@
     margin-bottom: -9px;
 }
 
-.skill-Section{
+.skill-Section {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.skill-name{
+.skill-name {
     font-size: 1rem;
-   
+
 }
 
-.html{
+.html {
     width: 100%;
     height: 8px;
     background: linear-gradient(to right, var(--font-color-gold) 95%, black 80%);
     border-radius: 25px;
 }
 
-.css{
+.css {
     width: 100%;
     height: 8px;
     background: linear-gradient(to right, var(--font-color-gold) 95%, black 80%);
     border-radius: 25px;
 }
 
-.js{
+.js {
     width: 100%;
     height: 8px;
     background: linear-gradient(to right, var(--font-color-gold) 90%, black 80%);
     border-radius: 25px;
 }
 
-.Ts{
+.Ts {
     width: 100%;
     height: 8px;
     background: linear-gradient(to right, var(--font-color-gold) 80%, black 80%);
     border-radius: 25px;
 }
 
-.react{
+.react {
     width: 100%;
     height: 8px;
     background: linear-gradient(to right, var(--font-color-gold) 80%, black 80%);
     border-radius: 25px;
 }
 
-.Ejs{
+.Ejs {
     width: 100%;
     height: 8px;
     background: linear-gradient(to right, var(--font-color-gold) 70%, black 70%);
     border-radius: 25px;
 }
 
-.next{
+.next {
     width: 100%;
     height: 8px;
     background: linear-gradient(to right, var(--font-color-gold) 80%, black 80%);
     border-radius: 25px;
 }
 
-.sql{
+.sql {
     width: 100%;
     height: 8px;
     background: linear-gradient(to right, var(--font-color-gold) 75%, black 75%);
@@ -460,221 +460,224 @@
     overflow: hidden;
 }
 
-@media screen and (max-width: 730px){
-    .education-line{
+@media screen and (max-width: 730px) {
+    .education-line {
         height: 20rem;
     }
 
-    .education-point2{
+    .education-point2 {
         top: 12.4rem;
     }
-    
-    .education-point3{
-        top:19rem
+
+    .education-point3 {
+        top: 19rem
     }
 
-    .Por-icon{
+    .Por-icon {
         margin-left: 0px;
     }
 }
 
-@media screen and (max-width: 666px){  
+@media screen and (max-width: 666px) {
 
-    .education-line{
+    .education-line {
         height: 21.7rem;
     }
-    .education-point3{
-        top:20.7rem
+
+    .education-point3 {
+        top: 20.7rem
     }
 }
 
-@media screen and (max-width: 604px){
-    .education-line{
+@media screen and (max-width: 604px) {
+    .education-line {
         height: 23rem;
     }
-    
-    .education-point2{
+
+    .education-point2 {
         top: 14rem;
     }
-    
-    .education-point3{
-        top:22.2rem
+
+    .education-point3 {
+        top: 22.2rem
     }
 
-    .education p{
+    .education p {
         font-weight: 400;
     }
 
-    .Por-Section{
+    .Por-Section {
         display: none;
     }
 
-    .por{
+    .por {
         display: flex;
     }
 
-    .Por-top{
+    .Por-top {
         margin-left: -0.4rem;
         gap: 0.4rem;
     }
 
-    .Por-icon{
+    .Por-icon {
         margin-left: 0px;
     }
 
-    .Por-1{
+    .Por-1 {
         text-align: start;
         margin-left: 3.3rem;
-     }
+    }
 
-     .number-icon{
+    .number-icon {
         font-size: 1.7rem;
         color: var(--font-color-gold);
         margin-right: 1.3rem;
         margin-left: -3rem;
     }
 
-     .Por-1 p{
+    .Por-1 p {
         font-weight: 400;
-     }
+    }
 
-     .Por-2 p{
+    .Por-2 p {
         font-weight: 400;
-     }
- 
- 
-     .Por-2{
-         text-align: start;
-         margin-left: 3.3rem;
-      }
+    }
+
+
+    .Por-2 {
+        text-align: start;
+        margin-left: 3.3rem;
+    }
 }
 
 
-@media screen and (max-width: 414px){
-    .education-line{
+@media screen and (max-width: 414px) {
+    .education-line {
         height: 25rem;
     }
-    
-    .education-point2{
+
+    .education-point2 {
         top: 15.9rem;
     }
-    
-    .education-point3{
-        top:24.2rem
+
+    .education-point3 {
+        top: 24.2rem
     }
 }
 
 
-@media screen and (max-width: 408px){
-    .education-line{
+@media screen and (max-width: 408px) {
+    .education-line {
         height: 25rem;
     }
-    
-    .education-point2{
+
+    .education-point2 {
         top: 15.9rem;
     }
-    
-    .education-point3{
-        top:24.2rem
+
+    .education-point3 {
+        top: 24.2rem
     }
 }
 
-@media screen and (max-width: 386px){  
+@media screen and (max-width: 386px) {
 
-    .education-line{
+    .education-line {
         height: 25.8rem;
     }
-    .education-point3{
-        top:25.7rem
+
+    .education-point3 {
+        top: 25.7rem
     }
 }
 
-@media screen and (max-width: 393px){  
+@media screen and (max-width: 393px) {
 
-    .education-line{
+    .education-line {
         height: 25.9rem;
     }
-    .education-point3{
-        top:25.9rem
+
+    .education-point3 {
+        top: 25.9rem
     }
 }
 
-@media screen and (max-width: 361px){
-    .education-line{
+@media screen and (max-width: 361px) {
+    .education-line {
         height: 27.5rem;
     }
-    
-    .education-point2{
+
+    .education-point2 {
         top: 17.5rem;
     }
-    
-    .education-point3{
-        top:27.5rem
+
+    .education-point3 {
+        top: 27.5rem
     }
 
-  
+
 }
 
-@media screen and (max-width: 530px){
-    .achievements-line{
+@media screen and (max-width: 530px) {
+    .achievements-line {
         height: 19rem;
     }
 
-    .achievements-point3{
-        top:19rem
+    .achievements-point3 {
+        top: 19rem
     }
 
-    .education{
+    .education {
         margin-left: 0.4rem;
         text-align: start;
     }
 
-    .achievements{
+    .achievements {
         margin-left: 0.4rem;
         text-align: start;
     }
 }
 
 
-@media screen and (max-width: 474px){
-    .achievements-line{
+@media screen and (max-width: 474px) {
+    .achievements-line {
         height: 21rem;
     }
-    
-    .achievements-point2{
+
+    .achievements-point2 {
         top: 12.3rem;
     }
-    
-    .achievements-point3{
-        top:20.6rem
+
+    .achievements-point3 {
+        top: 20.6rem
     }
 
 }
 
-@media screen and (max-width: 482px){
-    .achievements-line{
+@media screen and (max-width: 482px) {
+    .achievements-line {
         height: 21rem;
     }
-    
-    .achievements-point2{
+
+    .achievements-point2 {
         top: 12.5rem;
     }
-    
-    .achievements-point3{
-        top:20.8rem
+
+    .achievements-point3 {
+        top: 20.8rem
     }
 
-    .Por-top{
+    .Por-top {
         gap: 0.4rem;
     }
 
-    .Por-1{
+    .Por-1 {
         text-align: start;
         margin-left: 3.2rem;
-     }
- 
-     .Por-2{
-         text-align: start;
-         margin-left: 3.2rem;
-      }
+    }
+
+    .Por-2 {
+        text-align: start;
+        margin-left: 3.2rem;
+    }
 }
