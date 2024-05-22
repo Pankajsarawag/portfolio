@@ -11,6 +11,7 @@ import Image from "next/image";
 import "./home.css";
 
 import Contact from "./Contact";
+import About from "./About";
 
 export default function MainPage() {
   
@@ -209,34 +210,7 @@ export default function MainPage() {
           </div>
 
           <div className="content">
-            {about && (<div className="about">
-              Cows hold a unique and prominent place in various cultures and societies across the world, symbolizing a range of values from economic prosperity to religious sanctity. This essay explores the multifaceted significance of cows, focusing on their economic, cultural, and religious roles, and examines how these roles have shaped human societies throughout history.
-
-Economic Importance
-Cows have been integral to agriculture for millennia, serving as a cornerstone of agricultural economies. In many rural areas, cows are a primary source of livelihood. They provide milk, which is a staple in many diets and can be processed into other dairy products like cheese, butter, and yogurt. This milk production is a significant economic activity, supporting millions of farmers worldwide.
-
-In addition to dairy, cows are valued for their meat and hides. Beef is a major source of protein in many diets, and the leather industry relies heavily on cowhide for producing a wide array of goods, from clothing to furniture. Moreover, in many traditional farming communities, cows are used as draft animals, plowing fields and transporting goods, thus playing a critical role in the agricultural process.
-
-Cow dung, often overlooked, is another valuable resource. It is used as a natural fertilizer, enriching the soil with essential nutrients and enhancing crop yields. In many developing countries, dried cow dung serves as an important fuel source for cooking and heating, illustrating the animal's utility beyond just food and labor.
-
-Cultural Significance
-Cows also occupy a significant place in the cultural practices and daily lives of many communities. In India, for example, the cow is a symbol of life and sustenance. This reverence is reflected in various festivals and rituals. During Pongal, a harvest festival in Tamil Nadu, cows are decorated and worshipped, acknowledging their role in agricultural success. Similarly, in the festival of Govardhan Puja, celebrated in North India, cows are honored as part of a broader celebration of nature's bounty.
-
-In other parts of the world, cows are central to local customs and traditions. In Maasai culture in Kenya and Tanzania, cattle are considered a measure of wealth and social status. The Maasai's deep connection to their cattle is evident in their rituals, songs, and daily practices. This bond underscores the animal's importance not just as a resource but as a key element of social identity and cohesion.
-
-Religious Symbolism
-The cow's religious significance is most pronounced in Hinduism, where it is revered as a sacred animal. The reverence for cows is rooted in ancient Hindu scriptures, where they are associated with deities and are seen as embodiments of virtues like non-violence and motherhood. The cow is often associated with Kamadhenu, a mythical cow that grants all desires, symbolizing abundance and generosity. This sacred status has profound implications, influencing dietary practices, agricultural methods, and even legal frameworks aimed at protecting the animal.
-
-In contrast, in other religions, cows hold different symbolic meanings. In ancient Egyptian mythology, the goddess Hathor, depicted as a cow or a woman with cow horns, symbolized fertility, motherhood, and the nurturing aspects of nature. In Norse mythology, the primeval cow Audhumla plays a crucial role in the creation myths, nourishing the first beings with her milk.
-
-Contemporary Issues
-In modern times, the role of cows continues to evolve, reflecting broader societal changes. The industrialization of agriculture has led to the rise of factory farming, raising ethical concerns about animal welfare. This has sparked movements advocating for more humane treatment of cows and a push towards sustainable farming practices.
-
-Furthermore, the environmental impact of large-scale cattle farming has come under scrutiny. Methane emissions from cows contribute significantly to greenhouse gas levels, prompting discussions on how to balance agricultural needs with environmental sustainability. Innovations in agricultural technology and a growing interest in plant-based diets are part of the ongoing efforts to address these challenges.
-
-Conclusion
-The cow's significance in human societies is profound and multi-dimensional, encompassing economic, cultural, and religious aspects. From being a source of sustenance and economic stability to a symbol of sacredness and cultural identity, cows have shaped human civilization in numerous ways. Understanding this deep-rooted connection offers insights into the diverse ways in which humans relate to the natural world and underscores the need for thoughtful stewardship of these valuable creatures in an ever-changing global landscape.
-            </div>)}
+            {about && (<About/>)}
             {resume && (<div className="resume">Resume</div>)}
             {projects && (<div className="projects">Projects</div>)}
             {contact && (<Contact />)}
