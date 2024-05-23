@@ -2,72 +2,75 @@ import "./Project.css";
 import React, { useState } from "react";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Button from '@mui/material/Button';
-import YTBookmark from "./projects/YT-bookmark";
-export default function Projects() {
-    const [Project, setProject] = useState<boolean>(true);
-    const [YtBookmark, setYTBookmark] = useState<boolean>(false);
-    const [dictionary, setDictionary] = useState<boolean>(false);
-    const [quiz, setQuiz] = useState<boolean>(false);
-    const [pianoTiles, setPianoTiles] = useState<boolean>(false);
-    const [portfolio, setPortfolio] = useState<boolean>(false);
 
-    const parameters = () => {
-        setProject(!Project);
-        setYTBookmark(!YtBookmark);
-        setDictionary(!dictionary);
-        setQuiz(!quiz);
-        setPianoTiles(!pianoTiles);
-        setPortfolio(!portfolio);
+import YTBookmark from "./projects/YT-bookmark";
+import Portfolio from "./projects/portfolio";
+import PianoTiles from "./projects/piano-tiles";
+import Dictionary from "./projects/dictionary";
+import Quiz from "./projects/quiz";
+import Smart from "./projects/smart-irrigation";
+import Speed from "./projects/speed-detection";
+import Noise from "./projects/noise-removal";
+
+export default function Projects() {
+    const [activeProject, setActiveProject] = useState<string>("");
+
+    const showProject = (project: string) => {
+        setActiveProject(project);
+    }
+
+    const goBack = () => {
+        setActiveProject("");
     }
 
     return (
         <>
-            {Project ? (
+            {activeProject === "" ? (
                 <div className="project-main">
                     <h1 className="software-projects">Software Projects</h1>
                     <div className="wrapper">
                         <div className="project">
                             <div className="project-box"
-                                onClick={() => { setProject(!Project); setYTBookmark(!YtBookmark) }}>
+                                onClick={() => showProject("YTBookmark")}>
                                 <div className="img-div">
-                                    <img src="./ytbookmark-1.png" alt="" />
-                                    <img src="./ytbookmark-2.png" alt="" />
+                                    <img src="./ytbookmark-1.png" alt="YouTube Bookmark 1" />
+                                    <img src="./ytbookmark-2.png" alt="YouTube Bookmark 2" />
                                 </div>
                                 <h1>YouTube Video Bookmark</h1>
                                 <p>React.js, CSS, Plasmo, TypeScript, Express.js, OAuth 2.0, MongoDB</p>
                             </div>
 
                             <div className="project-box"
-                                onClick={() => { setProject(!Project); setPortfolio(!portfolio) }}>
+                                onClick={() => showProject("Portfolio")}>
                                 <div className="img-div">
-                                    <img src="./portfolio.png" alt="" />
+                                    <img src="./portfolio.png" alt="Portfolio" />
                                 </div>
                                 <h1>Portfolio Website</h1>
                                 <p>Next.js, CSS, TypeScript, React.Js, EmailJS</p>
                             </div>
 
                             <div className="project-box"
-                                onClick={() => { setProject(!Project); setPianoTiles(!pianoTiles) }}>
+                                onClick={() => showProject("PianoTiles")}>
                                 <div className="img-div">
-                                    <img src="./piano-tiles.png" alt="" />
+                                    <img src="./piano-tiles.png" alt="Piano Tiles" />
                                 </div>
                                 <h1>Piano tiles</h1>
                                 <p>HTML, CSS, JavaScript</p>
                             </div>
 
                             <div className="project-box"
-                                onClick={() => { setProject(!Project); setDictionary(!dictionary) }}>
+                                onClick={() => showProject("Dictionary")}>
                                 <div className="img-div">
-                                    <img src="./dictionary.png" alt="" />
+                                    <img src="./dictionary.png" alt="Dictionary" />
                                 </div>
                                 <h1>Dictionary Website</h1>
                                 <p>HTML, CSS, JavaScript, dictionary API</p>
                             </div>
 
                             <div className="project-box"
-                                onClick={() => { setProject(!Project); setQuiz(!quiz) }}>
+                                onClick={() => showProject("Quiz")}>
                                 <div className="img-div">
-                                    <img src="./quiz-1.png" alt="" />
+                                    <img src="./quiz-1.png" alt="Quiz" />
                                 </div>
                                 <h1>Quiz Website</h1>
                                 <p>HTML, CSS, JavaScript, Quiz API</p>
@@ -79,39 +82,42 @@ export default function Projects() {
                     <div className="wrapper">
                         <div className="project">
                             <div className="project-box"
-                                onClick={() => { setProject(!Project); setYTBookmark(!YtBookmark) }}>
+                                onClick={() => showProject("Noise")}>
                                 <div className="img-div">
-                                    <img src="./ytbookmark-1.png" alt="" />
-                                    <img src="./ytbookmark-2.png" alt="" />
+                                    <img src="./noise.png" alt="Live Video Noise Removal" />
                                 </div>
-                                <h1>YouTube Video Bookmark</h1>
-                                <p>React.js, CSS, Plasmo, TypeScript, Express.js, OAuth 2.0, MongoDB</p>
+                                <h1>Live video Noise Removal using Jetson Nano</h1>
                             </div>
 
                             <div className="project-box"
-                                onClick={() => { setProject(!Project); setPortfolio(!portfolio) }}>
+                                onClick={() => showProject("Speed")}>
                                 <div className="img-div">
-                                    <img src="./portfolio.png" alt="" />
+                                    <img src="./speed.png" alt="Speed Detection" />
                                 </div>
-                                <h1>Portfolio Website</h1>
-                                <p>Next.js, CSS, TypeScript, React.Js, EmailJS</p>
+                                <h1>Speed Detection Using IR Sensor</h1>
                             </div>
 
                             <div className="project-box"
-                                onClick={() => { setProject(!Project); setPianoTiles(!pianoTiles) }}>
+                                onClick={() => showProject("Smart")}>
                                 <div className="img-div">
-                                    <img src="./piano-tiles.png" alt="" />
+                                    <img src="./soil.png" alt="Smart Irrigation" />
                                 </div>
-                                <h1>Piano tiles</h1>
-                                <p>HTML, CSS, JavaScript</p>
+                                <h1>Smart Irrigation Using Soil Moisture Sensor</h1>
                             </div>
                         </div>
                     </div>
                 </div>
             ) : (
                 <div className="project-explore">
-                    <Button className="backbtn" onClick={parameters} variant="outlined"><ArrowBackIcon style={{ marginRight: 4 }} /> Back</Button>
-                    {YtBookmark && <YTBookmark />}
+                    <Button className="backbtn" onClick={goBack} variant="outlined"><ArrowBackIcon style={{ marginRight: 4 }} /> Back</Button>
+                    {activeProject === "YTBookmark" && <YTBookmark />}
+                    {activeProject === "Dictionary" && <Dictionary />}
+                    {activeProject === "Quiz" && <Quiz />}
+                    {activeProject === "PianoTiles" && <PianoTiles />}
+                    {activeProject === "Portfolio" && <Portfolio />}
+                    {activeProject === "Smart" && <Smart />}
+                    {activeProject === "Speed" && <Speed />}
+                    {activeProject === "Noise" && <Noise />}
                 </div>
             )}
         </>

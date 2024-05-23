@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -9,48 +9,67 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import Image from "next/image";
 import "./home.css";
-
 import Contact from "./Contact";
 import About from "./About";
 import Resume from "./Resume";
 import Projects from "./Projects";
+import { dir } from "console";
 
 export default function MainPage() {
-
-  const [about, setAbout] = useState(true);
-  const [resume, setResume] = useState(false);
-  const [projects, setProjects] = useState(false);
-  const [contact, setContact] = useState(false);
+  const [activeComponent, setActiveComponent] = useState("about");
+  const [transitionClass, setTransitionClass] = useState("");
   const [smallScreen, setSmallScreen] = useState(false);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
 
-  const aboutbtn = () => {
-    setAbout(true);
-    setResume(false);
-    setProjects(false);
-    setContact(false);
+  const componentsOrder = ["about", "resume", "projects", "contact"];
 
-  }
+  useEffect(() => {
+    setTransitionClass("transition-enter-left");
+  }, [activeComponent]);
 
-  const resumebtn = () => {
-    setAbout(false);
-    setResume(true);
-    setProjects(false);
-    setContact(false);
-  }
+  const changeComponent = (component:any) => {
+    if (component === activeComponent) return;
+    var currentIndex = componentsOrder.indexOf(activeComponent);
+    var targetIndex = componentsOrder.indexOf(component);
+    const direction = currentIndex > targetIndex ? "left" : "right";
 
-  const projectsbtn = () => {
-    setAbout(false);
-    setResume(false);
-    setProjects(true);
-    setContact(false);
-  }
+    if (direction === "left") {
+      setTransitionClass("transition-exit-left");
+      setTimeout(() => {
+        setActiveComponent(component);
+        setTransitionClass("transition-enter-left");
+      }, 10);
+    } else if (direction === "right") {
+      setTransitionClass("transition-exit-right");
+      setTimeout(() => {
+        setActiveComponent(component);
+        setTransitionClass("transition-enter-right");
+      }, 10);
+    }
+  };
 
-  const contactbtn = () => {
-    setAbout(false);
-    setResume(false);
-    setProjects(false);
-    setContact(true);
-  }
+  const handleTouchStart = (e:any) => {
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e:any) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      const currentIndex = componentsOrder.indexOf(activeComponent);
+      if (currentIndex < componentsOrder.length - 1) {
+        changeComponent(componentsOrder[currentIndex + 1]);
+      }
+    } else if (touchEndX - touchStartX > 50) {
+      const currentIndex = componentsOrder.indexOf(activeComponent);
+      if (currentIndex > 0) {
+        changeComponent(componentsOrder[currentIndex - 1]);
+      }
+    }
+  };
 
   return (
     <main className="main">
@@ -163,7 +182,6 @@ export default function MainPage() {
                 <h1>Pankaj Kumar</h1>
                 <p> Web Developer</p>
               </div>
-
             </div>
           )}
 
@@ -179,43 +197,27 @@ export default function MainPage() {
         </div>
       </div>
 
-      <div className="right-main">
+      <div className="right-main" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <div className="right-mask"></div>
         <div className="subRight-main">
           <div className="header">
-            {about && <h1>About</h1>}
-            {resume && <h1>Resume</h1>}
-            {projects && <h1>Projects</h1>}
-            {contact && <h1>Contact</h1>}
+            {activeComponent === "about" && <h1>About</h1>}
+            {activeComponent === "resume" && <h1>Resume</h1>}
+            {activeComponent === "projects" && <h1>Projects</h1>}
+            {activeComponent === "contact" && <h1>Contact</h1>}
             <div className="header-details">
-              {about ? (
-                <h2 className="btn-active" onClick={aboutbtn}>About</h2>
-              ) : (
-                <h2 className="btn-normal" onClick={aboutbtn}>About</h2>
-              )}
-              {resume ? (
-                <h2 className="btn-active" onClick={resumebtn}>Resume</h2>
-              ) : (
-                <h2 className="btn-normal" onClick={resumebtn}>Resume</h2>
-              )}
-              {projects ? (
-                <h2 className="btn-active" onClick={projectsbtn}>Projects</h2>
-              ) : (
-                <h2 className="btn-normal" onClick={projectsbtn}>Projects</h2>
-              )}
-              {contact ? (
-                <h2 className="btn-active" onClick={contactbtn}>Contact</h2>
-              ) : (
-                <h2 className="btn-normal" onClick={contactbtn}>Contact</h2>
-              )}
+              <h2 className={activeComponent === "about" ? "btn-active" : "btn-normal"} onClick={() => changeComponent("about")}>About</h2>
+              <h2 className={activeComponent === "resume" ? "btn-active" : "btn-normal"} onClick={() => changeComponent("resume")}>Resume</h2>
+              <h2 className={activeComponent === "projects" ? "btn-active" : "btn-normal"} onClick={() => changeComponent("projects")}>Projects</h2>
+              <h2 className={activeComponent === "contact" ? "btn-active" : "btn-normal"} onClick={() => changeComponent("contact")}>Contact</h2>
             </div>
           </div>
 
-          <div className="content">
-            {about && (<About />)}
-            {resume && (<Resume />)}
-            {projects && (<Projects />)}
-            {contact && (<Contact />)}
+          <div className={`content ${transitionClass}`}>
+            {activeComponent === "about" && <About />}
+            {activeComponent === "resume" && <Resume />}
+            {activeComponent === "projects" && <Projects />}
+            {activeComponent === "contact" && <Contact />}
           </div>
         </div>
       </div>

@@ -21,6 +21,63 @@
   --transition-2: 0.5s ease-in-out;
 }
 
+
+/* home.css */
+.transition-enter-left {
+  animation: enter-left 0.5s forwards;
+}
+
+.transition-exit-left {
+  animation: exit-left 0.5 forwards;
+}
+
+.transition-enter-right {
+  animation: enter-right 0.5s forwards;
+}
+
+.transition-exit-right {
+  animation: exit-right 0.5s forwards;
+}
+
+@keyframes enter-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes exit-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes enter-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes exit-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -56,6 +113,7 @@
   z-index: 1;
   position: relative;
   margin-right: 1rem;
+  margin-left: 9rem;
   justify-content: end;
   position: relative;
 }
@@ -63,11 +121,12 @@
 .right-main {
   display: flex;
   flex-direction: column;
-  width: 42rem;
+  width: auto;
   background-color: var(--background-color-main);
   transition: var(--transition-2);
   margin-top: 3%;
   margin-left: 1rem;
+  overflow: hidden;
 }
 
 .left-mask {
@@ -290,6 +349,7 @@
   text-underline-offset: 20px;
   text-decoration-style: solid;
   text-decoration-color: var(--font-color-gold);
+  transition: var(--transition-2);
 }
 
 .header-details {
