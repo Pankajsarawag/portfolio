@@ -49,27 +49,6 @@ export default function MainPage() {
 
 
 
-  const handleTouchStart = (e: any) => {
-    setTouchStartX(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchMove = (e: any) => {
-    setTouchEndX(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (touchStartX - touchEndX > 50) {
-      const currentIndex = componentsOrder.indexOf(activeComponent);
-      if (currentIndex < componentsOrder.length - 1) {
-        changeComponent(componentsOrder[currentIndex + 1]);
-      }
-    } else if (touchEndX - touchStartX > 50) {
-      const currentIndex = componentsOrder.indexOf(activeComponent);
-      if (currentIndex > 0) {
-        changeComponent(componentsOrder[currentIndex - 1]);
-      }
-    }
-  };
 
   return (
     <main className="main">
@@ -197,7 +176,7 @@ export default function MainPage() {
         </div>
       </div>
 
-      <div className="right-main" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
+      <div className="right-main" >
         <div className="right-mask"></div>
         <div className="subRight-main">
           <div className="header">
@@ -214,10 +193,10 @@ export default function MainPage() {
           </div>
 
           <div className={`content ${transitionClass}`}>
-            {activeComponent === "about" && <About />}
+            {activeComponent === "about" && <About/>}
             {activeComponent === "resume" && <Resume />}
             {activeComponent === "projects" && <Projects />}
-            {activeComponent === "contact" && <Contact />}
+            {activeComponent === "contact" && <Contact/>}
           </div>
         </div>
       </div>
