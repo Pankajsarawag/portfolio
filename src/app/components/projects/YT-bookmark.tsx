@@ -3,12 +3,10 @@ import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
 import Box from '@mui/material/Box';
-import MuiAccordionSummary, {
-    AccordionSummaryProps,
-} from '@mui/material/AccordionSummary';
+
+import MuiAccordionSummary, { AccordionSummaryProps } from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import { loadGetInitialProps } from 'next/dist/shared/lib/utils';
 
 const Accordion = styled((props: AccordionProps) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -66,12 +64,12 @@ export default function YTBookmark() {
                         justifyContent: "center",
                         borderBottom: "1px solid rgb(26, 26, 26)",
                         padding: "0rem 1rem 1rem 0rem",
-                        margin: "2rem 0rem"
+                        margin: "0rem 0rem 2rem 0rem",
+                        marginTop: "0rem"
                     }}
                 >
                     YT TimeStamp Bookmark
                 </Box>
-
 
                 <Accordion style={{ background: "rgba(26,26,26)", color: "white", borderRadius: "20px" }} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary style={{ color: "white" }} aria-controls="panel1d-content" id="panel1d-header">
@@ -90,7 +88,6 @@ export default function YTBookmark() {
                 </Accordion>
 
                 <Box
-
                     display={"flex"}
                     justifyContent={"center"}
                     alignItems={"center"}
@@ -147,6 +144,11 @@ export default function YTBookmark() {
                     </div>
 
                     <div className="tech-details">
+                        <img src="/mui.png" alt="mui" />
+                        <h1>Material Ui</h1>
+                    </div>
+
+                    <div className="tech-details">
                         <img src="/git.png" alt="git" />
                         <h1>Git Bash</h1>
                     </div>
@@ -155,12 +157,12 @@ export default function YTBookmark() {
                         <img src="/github.png" alt="github" />
                         <h1>Github</h1>
                     </div>
-
-                    <div className="tech-details">
-                        <img src="/mui.png" alt="mui" />
-                        <h1>Material Ui</h1>
-                    </div>
                 </div>
+
+                <h1 style={{ fontSize: "1.3rem", fontWeight: 600, margin: "2rem 0rem 1rem 0rem" }}>Demo Video</h1>
+                <video width="100%" height="auto" controls style={{ marginBottom: "-0.5rem" }}>
+                    <source src="./demo-yt.mp4" type="video/mp4" />
+                </video>
             </div>
         </>
     );
