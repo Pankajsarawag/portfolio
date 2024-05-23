@@ -24,36 +24,36 @@ export default function MainPage() {
 
   const componentsOrder = ["about", "resume", "projects", "contact"];
 
-  useEffect(() => {
-    setTransitionClass("transition-enter-left");
-  }, [activeComponent]);
+  const changeComponent = (component: any) => {
+    if (component != activeComponent) {
+      const currentIndex = componentsOrder.indexOf(activeComponent);
+      const targetIndex = componentsOrder.indexOf(component);
+      const direction = currentIndex > targetIndex ? "left" : "right";
 
-  const changeComponent = (component:any) => {
-    if (component === activeComponent) return;
-    var currentIndex = componentsOrder.indexOf(activeComponent);
-    var targetIndex = componentsOrder.indexOf(component);
-    const direction = currentIndex > targetIndex ? "left" : "right";
-
-    if (direction === "left") {
-      setTransitionClass("transition-exit-left");
-      setTimeout(() => {
-        setActiveComponent(component);
-        setTransitionClass("transition-enter-left");
-      }, 10);
-    } else if (direction === "right") {
-      setTransitionClass("transition-exit-right");
-      setTimeout(() => {
-        setActiveComponent(component);
-        setTransitionClass("transition-enter-right");
-      }, 10);
+      if (direction === "left") {
+        setTransitionClass("transition-exit-left");
+        setTimeout(() => {
+          setActiveComponent(component);
+          setTransitionClass("transition-enter-left");
+        }, 0);
+      } else if (direction === "right") {
+        setTransitionClass("transition-exit-right");
+        setTimeout(() => {
+          setActiveComponent(component);
+          setTransitionClass("transition-enter-right");
+        }, 0);
+      }
     }
+
   };
 
-  const handleTouchStart = (e:any) => {
+
+
+  const handleTouchStart = (e: any) => {
     setTouchStartX(e.targetTouches[0].clientX);
   };
 
-  const handleTouchMove = (e:any) => {
+  const handleTouchMove = (e: any) => {
     setTouchEndX(e.targetTouches[0].clientX);
   };
 
