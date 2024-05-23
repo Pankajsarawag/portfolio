@@ -69,7 +69,7 @@ export default function Quiz() {
                         marginTop: "1rem"
                     }}
                 >
-                    Piano Tiles
+                    Quiz Website
                 </Box>
 
                 <Accordion style={{ background: "rgba(26,26,26)", color: "white", borderRadius: "20px" }} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
