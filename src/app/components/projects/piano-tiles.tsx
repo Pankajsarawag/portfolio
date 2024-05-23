@@ -120,7 +120,7 @@ export default function PianoTiles() {
                     alignItems={"center"}
                     margin={"1rem 0rem"}
                     style={{ gap: "1rem" }}
-                    fontSize={{ xs: "0.9rem", sm: "1.1rem", md: "1.2rem" }}
+                    fontSize={{ xs: "0.8rem", sm: "1.1rem", md: "1.2rem" }}
                     width={"100%"}
                     height={"50px"}
                     padding={"0rem 1rem"}
@@ -128,7 +128,7 @@ export default function PianoTiles() {
                     fontWeight={"300"}
                     sx={{ background: "rgba(26,26,26)" }}
                 >
-                    <a style={{ display: 'flex', justifyContent: "center", alignItems: "center" }} href="https://pankajsarawag.github.io/Piano-tiles/"><LinkIcon style={{ color: "20a4b6", fontSize: "2rem", marginRight: "1rem" }} />https://pankajsarawag.github.io/Piano-tiles/</a>
+                    <a style={{ display: 'flex', justifyContent: "center", alignItems: "center" }} href="https://pankajsarawag.github.io/Piano-tiles/"><LinkIcon style={{ color: "20a4b6", fontSize: "2rem", marginRight: "1rem" }} /><u>pankajsarawag.github.io/Piano-tiles</u></a>
                 </Box>
                 <h1 style={{ fontWeight: 600, fontSize: "1.4rem", margin: "1rem 0rem" }}>Technologies Used</h1>
                 <div className='technology'>
