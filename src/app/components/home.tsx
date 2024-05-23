@@ -19,8 +19,6 @@ export default function MainPage() {
   const [activeComponent, setActiveComponent] = useState("about");
   const [transitionClass, setTransitionClass] = useState("");
   const [smallScreen, setSmallScreen] = useState(false);
-  const [touchStartX, setTouchStartX] = useState(0);
-  const [touchEndX, setTouchEndX] = useState(0);
 
   const componentsOrder = ["about", "resume", "projects", "contact"];
 
@@ -46,9 +44,6 @@ export default function MainPage() {
     }
 
   };
-
-
-
 
   return (
     <main className="main">
@@ -176,7 +171,7 @@ export default function MainPage() {
         </div>
       </div>
 
-      <div className="right-main" >
+      <div className="right-main">
         <div className="right-mask"></div>
         <div className="subRight-main">
           <div className="header">
@@ -193,10 +188,10 @@ export default function MainPage() {
           </div>
 
           <div className={`content ${transitionClass}`}>
-            {activeComponent === "about" && <About/>}
+            {activeComponent === "about" && <About />}
             {activeComponent === "resume" && <Resume />}
             {activeComponent === "projects" && <Projects />}
-            {activeComponent === "contact" && <Contact/>}
+            {activeComponent === "contact" && <Contact />}
           </div>
         </div>
       </div>

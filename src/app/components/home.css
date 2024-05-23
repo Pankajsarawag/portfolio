@@ -366,6 +366,14 @@ overflow: hidden;
   transition: var(--transition-2);
 }
 
+.header-details h2{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
 .btn-normal:hover {
   cursor: pointer;
   color: var(--font-color-gold);
