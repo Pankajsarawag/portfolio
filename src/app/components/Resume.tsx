@@ -89,7 +89,7 @@ export default function Resume() {
                 </div>
             </div>
             <div className="skill-percent">
-                <h1 style={{ fontSize: "1.8rem", fontWeight: 600, display:"flex", alignItems:"center" }}><PsychologyIcon style={{fontSize:"1.8rem", marginRight:5}}/> Skills</h1>
+                <h1 style={{ fontSize: "1.8rem", fontWeight: 600, display: "flex", alignItems: "center" }}><PsychologyIcon style={{ fontSize: "1.8rem", marginRight: 5 }} /> Skills</h1>
                 <div className="skill-Section">
                     <h1 className='skill-name'> <b>HTML</b> 95%</h1>
                     <div className="html"></div>

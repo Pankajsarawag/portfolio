@@ -110,23 +110,57 @@
     flex-direction: column;
     margin: 0rem;
 }
+
 .backbtn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 110px;
+    width: 115px;
     border-radius: var(--radius-10);
-    gap: 10px;
-    padding: 4px 10px;
+    gap: 5px;
+    padding: 4px 15px;
     color: var(--font-color-subheading);
     font-weight: 600;
     font-size: 1rem;
     border-color: var(--font-color-gold);
     transition: var(--transition-2);
     margin: 1rem 0rem 0rem 0rem;
+    animation: zoomIN 0.5s forwards;
 }
 
 .backbtn:hover {
     border-color: var(--font-color-gold);
     cursor: pointer;
+}
+
+.zoom-in {
+    animation: zoomIn 0.5s forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.zoom-out {
+    animation: zoomOut 0.5s forwards;
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
 }

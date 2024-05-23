@@ -104,6 +104,11 @@ export default function About() {
                 </div>
 
                 <div className="tech-details">
+                    <img src="/api.png" alt="api" />
+                    <h1>API</h1>
+                </div>
+
+                <div className="tech-details">
                     <img src="/mui.png" alt="mui" />
                     <h1>Material Ui</h1>
                 </div>

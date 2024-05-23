@@ -8,23 +8,29 @@ import Portfolio from "./projects/portfolio";
 import PianoTiles from "./projects/piano-tiles";
 import Dictionary from "./projects/dictionary";
 import Quiz from "./projects/quiz";
-import Smart from "./projects/smart-irrigation";
-import Speed from "./projects/speed-detection";
-import Noise from "./projects/noise-removal";
 
 export default function Projects() {
     const [activeProject, setActiveProject] = useState<string>("");
+    const [animation, setAnimation] = useState<string>("");
 
     const showProject = (project: string) => {
-        setActiveProject(project);
+        setAnimation("zoom-out full-page-animation");
+        setTimeout(() => {
+            setActiveProject(project);
+            setAnimation("zoom-in full-page-animation");
+        }, 10);
     }
 
     const goBack = () => {
-        setActiveProject("");
+        setAnimation("zoom-out full-page-animation");
+        setTimeout(() => {
+            setActiveProject("");
+            setAnimation("zoom-in full-page-animation");
+        }, 10);
     }
 
     return (
-        <>
+        <div className={animation}>
             {activeProject === "" ? (
                 <div className="project-main">
                     <h1 className="software-projects">Software Projects</h1>
@@ -109,17 +115,14 @@ export default function Projects() {
                 </div>
             ) : (
                 <div className="project-explore">
-                    <Button className="backbtn" onClick={goBack} variant="outlined"><ArrowBackIcon style={{ marginRight: 4 }} /> Back</Button>
+                    <Button className="backbtn" onClick={goBack} variant="outlined"><ArrowBackIcon style={{ marginRight: 2 }} /> Back</Button>
                     {activeProject === "YTBookmark" && <YTBookmark />}
                     {activeProject === "Dictionary" && <Dictionary />}
                     {activeProject === "Quiz" && <Quiz />}
                     {activeProject === "PianoTiles" && <PianoTiles />}
                     {activeProject === "Portfolio" && <Portfolio />}
-                    {activeProject === "Smart" && <Smart />}
-                    {activeProject === "Speed" && <Speed />}
-                    {activeProject === "Noise" && <Noise />}
                 </div>
             )}
-        </>
+        </div>
     );
 }
