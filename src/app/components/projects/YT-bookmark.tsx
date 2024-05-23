@@ -65,7 +65,7 @@ export default function YTBookmark() {
                         borderBottom: "1px solid rgb(26, 26, 26)",
                         padding: "0rem 1rem 1rem 0rem",
                         margin: "0rem 0rem 2rem 0rem",
-                        marginTop: "0rem"
+                        marginTop: "1rem"
                     }}
                 >
                     YT TimeStamp Bookmark
@@ -91,7 +91,7 @@ export default function YTBookmark() {
                     display={"flex"}
                     justifyContent={"center"}
                     alignItems={"center"}
-                    margin={"2rem 0rem"}
+                    margin={"2rem 0rem 1rem 0rem"}
                 >
                     <Box
                         display={"flex"}
@@ -159,7 +159,7 @@ export default function YTBookmark() {
                     </div>
                 </div>
 
-                <h1 style={{ fontSize: "1.3rem", fontWeight: 600, margin: "2rem 0rem 1rem 0rem" }}>Demo Video</h1>
+                <h1 style={{ fontSize: "1.3rem", fontWeight: 600, margin: "1.5rem 0rem 1rem 0rem" }}>Demo Video</h1>
                 <video width="100%" height="auto" controls style={{ marginBottom: "-0.5rem" }}>
                     <source src="./demo-yt.mp4" type="video/mp4" />
                 </video>
