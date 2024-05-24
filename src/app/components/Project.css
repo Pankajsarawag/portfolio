@@ -71,6 +71,11 @@
     overflow: hidden;
 }
 
+.project-box:hover {
+    transition: var(--transition-2);
+    cursor: pointer;
+}
+
 .project-box img {
     width: 100%;
     height: 200px;

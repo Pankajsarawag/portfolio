@@ -87,24 +87,21 @@ export default function Projects() {
                     <h1 className="electronics-projects">Electronics Projects</h1>
                     <div className="wrapper">
                         <div className="project">
-                            <div className="project-box"
-                                onClick={() => showProject("Noise")}>
+                            <div className="project-box">
                                 <div className="img-div">
                                     <img src="./noise.png" alt="Live Video Noise Removal" />
                                 </div>
                                 <h1>Live video Noise Removal using Jetson Nano</h1>
                             </div>
 
-                            <div className="project-box"
-                                onClick={() => showProject("Speed")}>
+                            <div className="project-box">
                                 <div className="img-div">
                                     <img src="./speed.png" alt="Speed Detection" />
                                 </div>
                                 <h1>Speed Detection Using IR Sensor</h1>
                             </div>
 
-                            <div className="project-box"
-                                onClick={() => showProject("Smart")}>
+                            <div className="project-box">
                                 <div className="img-div">
                                     <img src="./soil.png" alt="Smart Irrigation" />
                                 </div>
