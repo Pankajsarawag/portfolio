@@ -76,8 +76,11 @@ export default function Dictionary() {
                     <AccordionSummary style={{ color: "white" }} aria-controls="panel1d-content" id="panel1d-header">
                         <Typography style={{ color: "white", fontWeight: 500, fontSize: "1.1rem" }}>About Project</Typography>
                     </AccordionSummary>
-                    <AccordionDetails style={{ background: "rgba(20, 20, 20)", color: "white", borderRadius: " 0px 0px 20px 20px", fontSize: "1rem" }}>
-                        <Typography >
+                    <AccordionDetails
+
+                        style={{ background: "rgba(20, 20, 20)", color: "white", borderRadius: " 0px 0px 20px 20px", fontSize: "1rem" }}>
+                        <Typography
+                            textAlign={{ xs: "start", sm: "justify", md: "justify" }} >
                             Designed and implemented a visually appealing front-end dictionary website with API integration for seamless word
                             searches and access to comprehensive lexical data, enhancing user vocabulary and language comprehension.
                         </Typography>

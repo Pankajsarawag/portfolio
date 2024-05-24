@@ -77,11 +77,11 @@ export default function PianoTiles() {
                         <Typography style={{ color: "white", fontWeight: 500, fontSize: "1.1rem" }}>About Project</Typography>
                     </AccordionSummary>
                     <AccordionDetails style={{ background: "rgba(20, 20, 20)", color: "white", borderRadius: " 0px 0px 20px 20px", fontSize: "1rem" }}>
-                        <Typography style={{ marginBottom: 10 }}>
+                        <Typography textAlign={{ xs: "start", sm: "justify", md: "justify" }} style={{ marginBottom: 10 }}>
                             Developed an engaging and user-friendly piano tiles website with three distinct modes: Normal, Hacker Mode, and
                             Hacker Mode ++.
                         </Typography>
-                        <Typography >
+                        <Typography textAlign={{ xs: "start", sm: "justify", md: "justify" }}  >
                             These modes provide an immersive experience with added challenges such as extra grids, a leaderboard, sound
                             effects, and a thrilling two-player mode where one player sets a pattern for the other to replicate, making the game
                             even more engaging.

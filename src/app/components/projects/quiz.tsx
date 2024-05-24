@@ -77,17 +77,17 @@ export default function Quiz() {
                         <Typography style={{ color: "white", fontWeight: 500, fontSize: "1.1rem" }}>About Project</Typography>
                     </AccordionSummary>
                     <AccordionDetails style={{ background: "rgba(20, 20, 20)", color: "white", borderRadius: " 0px 0px 20px 20px", fontSize: "1rem" }}>
-                        <Typography style={{ marginBottom: 10 }}>
+                        <Typography textAlign={{ xs: "start", sm: "justify", md: "justify" }} style={{ marginBottom: 10 }}>
                             Developed a responsive website using HTML, CSS, and JavaScript that features an interactive quiz that dynamically
                             fetches questions from an API.
                         </Typography>
 
-                        <Typography style={{ marginBottom: 10 }}>
+                        <Typography textAlign={{ xs: "start", sm: "justify", md: "justify" }} style={{ marginBottom: 10 }}>
                             Users can test their knowledge, receive scores based on their answers, and benefit from immediate feedback with
                             correct/incorrect indicators.
                         </Typography>
 
-                        <Typography >
+                        <Typography textAlign={{ xs: "start", sm: "justify", md: "justify" }} >
                             Implemented timed questions, multiple-choice options, and a comprehensive final score page, while also providing
                             users with the correct answers for incorrect responses, promoting a valuable learning experience.
                         </Typography>

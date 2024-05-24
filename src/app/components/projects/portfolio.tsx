@@ -77,7 +77,7 @@ export default function PortFolio() {
                         <Typography style={{ color: "white", fontWeight: 500, fontSize: "1.1rem" }}>About Project</Typography>
                     </AccordionSummary>
                     <AccordionDetails style={{ background: "rgba(20, 20, 20)", color: "white", borderRadius: " 0px 0px 20px 20px", fontSize: "1rem" }}>
-                        <Typography>
+                        <Typography textAlign={{ xs: "start", sm: "justify", md: "justify" }} >
                             Utilizing the Next.js framework, the site boasts lightning-fast load times and seamless navigation, ensuring an exceptional user experience. Its sleek and responsive design adapts flawlessly to various screen sizes, from desktops to mobile devices, while its clean and intuitive layout presents content in an engaging and easily digestible manner.
                         </Typography>
                     </AccordionDetails>

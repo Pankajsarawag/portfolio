@@ -76,11 +76,11 @@ export default function YTBookmark() {
                         <Typography style={{ color: "white", fontWeight: 500, fontSize: "1.1rem" }}>About Project</Typography>
                     </AccordionSummary>
                     <AccordionDetails style={{ background: "rgba(20, 20, 20)", color: "white", borderRadius: " 0px 0px 20px 20px", fontSize: "1rem" }}>
-                        <Typography style={{ marginBottom: 10 }}>
+                        <Typography textAlign={{ xs: "start", sm: "justify", md: "justify" }} style={{ marginBottom: 10 }}>
                             Developed a Chrome extension enabling users to bookmark timestamps in YouTube videos, integrating Google OAuth
                             for secure user authentication.
                         </Typography>
-                        <Typography>
+                        <Typography textAlign={{ xs: "start", sm: "justify", md: "justify" }} >
                             Employed MongoDB for data storage, utilized the Plasmo Framework for efficient development, and integrated
                             post-saving note update functionality.
                         </Typography>
