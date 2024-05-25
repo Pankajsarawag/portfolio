@@ -551,7 +551,7 @@
 }
 
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 412px) {
     .education-line {
         height: 25rem;
     }
