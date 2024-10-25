@@ -8,6 +8,7 @@ import Portfolio from "./projects/portfolio";
 import PianoTiles from "./projects/piano-tiles";
 import Dictionary from "./projects/dictionary";
 import Quiz from "./projects/quiz";
+import IcognitoInsights from "./projects/icognitoInsights";
 
 export default function Projects() {
     const [activeProject, setActiveProject] = useState<string>("");
@@ -44,6 +45,16 @@ export default function Projects() {
                                 </div>
                                 <h1>YouTube Video Bookmark</h1>
                                 <p>React.js, CSS, Plasmo, TypeScript, Express.js, OAuth 2.0, MongoDB</p>
+                            </div>
+
+
+                            <div className="project-box"
+                                onClick={() => showProject("icognitoInsights")}>
+                                <div className="img-div">
+                                    <img src="./icognito2.png" alt="icognito" />
+                                </div>
+                                <h1>icognito Insights</h1>
+                                <p>Next.js, CSS, TypeScript, React.Js, Shade Cn, Zod</p>
                             </div>
 
                             <div className="project-box"
@@ -118,6 +129,8 @@ export default function Projects() {
                     {activeProject === "Quiz" && <Quiz />}
                     {activeProject === "PianoTiles" && <PianoTiles />}
                     {activeProject === "Portfolio" && <Portfolio />}
+                    {activeProject === "icognitoInsights" && <IcognitoInsights />}
+                    
                 </div>
             )}
         </div>
