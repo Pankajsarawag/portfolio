@@ -22,7 +22,7 @@ export default function Resume() {
                     <div className="college">
                         <h1>National Institute of Technology, Tiruchirappalli, Tamil Nadu</h1>
                         <h3>2021-Present</h3>
-                        <p>Bachelor of Technology in Instrumentation and Control Engineering <b> (CGPA: 8.43) </b> </p>
+                        <p>Bachelor of Technology in Instrumentation and Control Engineering <b> (CGPA: 8.36) </b> </p>
                     </div>
 
                     <div className="class-12">
