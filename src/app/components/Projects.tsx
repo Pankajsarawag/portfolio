@@ -9,6 +9,7 @@ import PianoTiles from "./projects/piano-tiles";
 import Dictionary from "./projects/dictionary";
 import Quiz from "./projects/quiz";
 import IcognitoInsights from "./projects/icognitoInsights";
+import Cbt from "./projects/CBTPlatform";
 
 export default function Projects() {
     const [activeProject, setActiveProject] = useState<string>("");
@@ -37,6 +38,15 @@ export default function Projects() {
                     <h1 className="software-projects">Software Projects</h1>
                     <div className="wrapper">
                         <div className="project">
+                        <div className="project-box"
+                                onClick={() => showProject("cbt")}>
+                                <div className="img-div">
+                                    <img src="./cbt1.png" alt="cbt1" />
+                                </div>
+                                <h1>CBT Platform</h1>
+                                <p>React.js, CSS, Plasmo, TypeScript, Express.js, OAuth 2.0, MongoDB, OCR, Flask</p>
+                            </div>
+
                             <div className="project-box"
                                 onClick={() => showProject("YTBookmark")}>
                                 <div className="img-div">
@@ -44,7 +54,7 @@ export default function Projects() {
                                     <img src="./ytbookmark-2.png" alt="YouTube Bookmark 2" />
                                 </div>
                                 <h1>YouTube Video Bookmark</h1>
-                                <p>React.js, CSS, Plasmo, TypeScript, Express.js, OAuth 2.0, MongoDB</p>
+                                <p>React.js, CSS, TypeScript, Express.js, OAuth 2.0, MongoDB, Material UI</p>
                             </div>
 
 
@@ -130,6 +140,7 @@ export default function Projects() {
                     {activeProject === "PianoTiles" && <PianoTiles />}
                     {activeProject === "Portfolio" && <Portfolio />}
                     {activeProject === "icognitoInsights" && <IcognitoInsights />}
+                    {activeProject === "cbt" && <Cbt/>}
                     
                 </div>
             )}
