@@ -70,7 +70,7 @@ export default function Blog() {
                         marginTop: "1rem"
                     }}
                 >
-                    Icognito Insights
+                    blog website
                 </Box>
 
                 <Accordion style={{ background: "rgba(26,26,26)", color: "white", borderRadius: "20px" }} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>

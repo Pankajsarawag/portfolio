@@ -4,7 +4,7 @@ export default function About() {
     return (
         <>
             <div style={{ color: "gray-700", fontSize: "1rem", marginBottom: "2rem" }}>
-                I’m Pankaj Kumar, a passionate web developer with a keen eye for design and functionality. As a student eager to leave a mark in the world of web development, I dedicate myself to creating websites that are not just operational, but also aesthetically appealing and user-centric.
+                I’m Pankaj Kumar, a passionate Fullsack developer with a keen eye for design and functionality. As a student eager to leave a mark in the world of web development, I dedicate myself to creating websites that are not just operational, but also aesthetically appealing and user-centric.
             </div>
             <h1 style={{ fontWeight: 800, fontSize: "2rem", margin: "1rem 0rem" }}>What I'm Doing</h1>
             <div className="skills-main">
