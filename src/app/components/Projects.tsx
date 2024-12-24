@@ -10,6 +10,7 @@ import Dictionary from "./projects/dictionary";
 import Quiz from "./projects/quiz";
 import IcognitoInsights from "./projects/icognitoInsights";
 import Cbt from "./projects/CBTPlatform";
+import Blog from "./projects/blog";
 
 export default function Projects() {
     const [activeProject, setActiveProject] = useState<string>("");
@@ -55,6 +56,15 @@ export default function Projects() {
                                 </div>
                                 <h1>YouTube Video Bookmark</h1>
                                 <p>React.js, CSS, TypeScript, Express.js, OAuth 2.0, MongoDB, Material UI</p>
+                            </div>
+
+                            <div className="project-box"
+                                onClick={() => showProject("blog")}>
+                                <div className="img-div">
+                                    <img src="./blog1.png" alt="blog" />
+                                </div>
+                                <h1>Blog Website</h1>
+                                <p>React.js, CSS, JavaScript, Node.js, MongoDB</p>
                             </div>
 
 
@@ -141,6 +151,7 @@ export default function Projects() {
                     {activeProject === "Portfolio" && <Portfolio />}
                     {activeProject === "icognitoInsights" && <IcognitoInsights />}
                     {activeProject === "cbt" && <Cbt/>}
+                    {activeProject === "blog" && <Blog/>}
                     
                 </div>
             )}
